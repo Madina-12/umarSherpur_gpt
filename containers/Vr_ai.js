@@ -1,6 +1,6 @@
 import styles from "./Vr_ai.module.css";
 import { BiMessageDetail } from "react-icons/bi";
-import { AiOutlineAppstore } from "react-icons/Ai";
+import { AiOutlineAppstore } from "react-icons/ai";
 
 import Image from "next/image";
 const Vr_ai = () => {
