@@ -1,0 +1,34 @@
+.blog{
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+.blog_pic{
+    position: relative;
+    cursor: pointer;
+}
+.blog_content{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+}
+.description{
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.read_article{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: white;
+    margin-top: auto;
+    cursor: pointer;
+}
+@media (max-width:48em){
+    .read_article{
+        padding-top: 1rem;
+    }
+}

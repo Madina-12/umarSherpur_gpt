@@ -1,0 +1,108 @@
+.vr_ai{
+    margin: var(--root-margin);
+    margin-top: 5rem;
+    display: grid;
+    
+    
+}
+
+.pic{
+    position: relative;
+    
+}
+.vr_ai_pic{
+    position: relative;
+    height: 100%;
+    width: 20rem;
+    aspect-ratio: 1;
+}
+.icon{
+    position: absolute;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    color: white;
+    
+}
+.message_icon{
+    top: -1rem;
+    left: 2rem;
+    background-color: #042C54;
+    font-size: 1rem;
+}
+.apps_icon{
+    background-color: #FF8A71;
+    top: 9rem;
+    left: 18rem;
+    font-size: 0.5rem;
+}
+
+.motivation{
+    display: grid;
+    gap: 1rem;
+    
+}
+.get_started1, .get_started2{
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.get_started2{
+    color:#FF8A71 ;
+}
+.register{
+    margin: var(--root-margin);
+    margin-top: 5rem;
+    display: grid;
+    align-items: center;
+    background-image: linear-gradient(to right ,#AE67FA,#F49867);
+    border-radius: 0.5rem;
+    color: black;
+}
+.request_early_access{
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.register_today{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.get_started_btn{
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 0.7rem;
+    border-style: none;
+}
+
+@media (max-width:48em){
+    .motivation{
+        padding-top: 2rem;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .register{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .register_today{
+        margin-top: 0.5rem;
+    }
+}
+@media (min-width:48.01em){
+    .vr_ai{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 3rem 0 3rem;
+    }
+    .motivation{
+        padding-top: 7rem;
+    }
+    .register{
+        grid-template-columns: auto 7rem;
+        padding: 2rem;
+    }
+}

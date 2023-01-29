@@ -1,0 +1,16 @@
+.heading{
+    position: relative;
+}
+.title{
+    font-weight: bolder;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+.bar{
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    height: 0.15rem;
+    width: 1.7rem;
+    background-image: linear-gradient(to right, #AE67FA,#F49867);
+}
