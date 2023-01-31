@@ -11,7 +11,10 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [load, setLoad] = useState(false);
   useEffect(() => {
-    setLoad(true);
+    const timer = setTimeout(()=>{
+      setLoad(true);
+    }, 3000)
+    return ()=>clearTimeout(timer)
   }, []);
 
   return (
