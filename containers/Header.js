@@ -23,7 +23,7 @@ const Header = () => {
           <div className={styles.people_count}>1,600 people requested access a visit in last 24 hours</div>
         </div>
       </div>
-      <div className={styles.ai_image}><Image src="/assets/ai.png" fill alt="ai" sizes="(max-width:768px) 100vw, 50vw" style={{objectFit:'contain'}}  priority /></div>
+      <div className={styles.ai_image}><Image src="/assets/ai.png" fill alt="ai" sizes="(max-width:768px) 100vw, 50vw" style={{objectFit:'contain'}}  priority='false' /></div>
     </div>
     <div className={styles.brands}>
       <div><Image src="/assets/google.png" fill alt="" sizes="(max-width:768px) 20vw , 10vw" style={{objectFit:'contain'}} priority /></div>
