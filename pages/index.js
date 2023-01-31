@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(()=>{
       setLoad(true);
-    }, 3000)
+    }, 1000)
     return ()=>clearTimeout(timer)
   }, []);
 
@@ -27,11 +27,11 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Navbar />
-        <Header />
       </main>
       <div>
         {load && (
           <>
+            <Header />
             <WhatGpt />
             <Contact_us id="contact_us" />
             <Vr_ai />
