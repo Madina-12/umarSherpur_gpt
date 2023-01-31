@@ -11,10 +11,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [load, setLoad] = useState(false);
   useEffect(() => {
-    const timer = setTimeout(()=>{
-      setLoad(true);
-    }, 1000)
-    return ()=>clearTimeout(timer)
+    setLoad(true)
   }, []);
 
   return (
@@ -27,11 +24,12 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Navbar />
+        <Header />
       </main>
       <div>
         {load && (
           <>
-            <Header />
+            
             <WhatGpt />
             <Contact_us id="contact_us" />
             <Vr_ai />
